@@ -17,8 +17,10 @@ const cors_1 = __importDefault(require("cors"));
 const routes_1 = require("./routes");
 const mongodb_config_1 = require("./db/mongodb.config");
 const dotenv_1 = __importDefault(require("dotenv"));
+const body_parser_1 = __importDefault(require("body-parser"));
 dotenv_1.default.config();
 const app = (0, express_1.default)();
+app.use(body_parser_1.default.json({ limit: '1000mb' }));
 app.use(express_1.default.json());
 app.use(express_1.default.urlencoded({ extended: false }));
 app.use((0, cors_1.default)({
