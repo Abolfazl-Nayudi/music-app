@@ -6,7 +6,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.Song = void 0;
 const mongoose_1 = __importDefault(require("mongoose"));
 const songSchema = new mongoose_1.default.Schema({
-    songTitle: {
+    songName: {
         type: String,
         required: true,
     },
@@ -23,6 +23,10 @@ const songSchema = new mongoose_1.default.Schema({
         required: true,
     },
     songUrl: {
+        type: String,
+        required: true,
+    },
+    image: {
         type: String,
         required: true,
     },

@@ -1,7 +1,7 @@
 import mongoose from 'mongoose';
 
 const songSchema = new mongoose.Schema({
-  songTitle: {
+  songName: {
     type: String,
     required: true,
   },
