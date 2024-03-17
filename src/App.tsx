@@ -1,10 +1,16 @@
 import './App.css';
-import SongUploader from './components/SongUploader/SongUploader';
+import Slider from './components/Slider/Slider';
+import Header from './components/Header/Header';
+
 function App() {
   return (
-    <>
-      <SongUploader />
-    </>
+    <section className="website-parent">
+      <div className="sidebar"></div>
+      <div className="content">
+        <Header />
+        <Slider />
+      </div>
+    </section>
   );
 }
 

@@ -1,0 +1,14 @@
+nav {
+  width: 340px;
+}
+
+.nav-list {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.nav-list > li > a {
+  text-decoration: none;
+}

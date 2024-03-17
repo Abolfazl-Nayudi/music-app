@@ -7,4 +7,9 @@ const postSong = async (data: SongFormType) => {
   return res;
 };
 
-export { postSong };
+const getAllSongs = async () => {
+  const res = await axios.get(baseUrl);
+  return res;
+};
+
+export { postSong, getAllSongs };
