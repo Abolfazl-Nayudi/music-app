@@ -12,7 +12,16 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.getSingleSong = exports.createSong = exports.getAllSongs = void 0;
 const song_schema_1 = require("../model/song.schema");
 const getAllSongs = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
-    res.send('all musics');
+    try {
+        const allSongs = yield song_schema_1.Song.find({});
+        if (!allSongs) {
+            return res.status(404).json({ message: 'song not found' });
+        }
+        return res.status(200).json(allSongs);
+    }
+    catch (err) {
+        console.log(err);
+    }
 });
 exports.getAllSongs = getAllSongs;
 const createSong = (req, res) => __awaiter(void 0, void 0, void 0, function* () {

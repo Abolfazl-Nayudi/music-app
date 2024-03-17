@@ -1,0 +1,100 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+
+    /*
+    
+    songTitle:
+    artistName:
+    duration: 
+    releaseYear:
+    songUrl: 
+    
+    
+    Lana del ray
+    
+    1:
+    
+    songTitle: "Summertime sadness",
+    artistName: "Lana del ray",
+    duration: 265 ,
+    releaseYear:2012,
+    songUrl: "https://audio.storage.iran.liara.space/lana-del-ray/09.summertime_sadness.mp3",
+    
+    2: 
+    songTitle: "Happiness is a butterfly",
+    artistName: "Lana del ray",
+    duration: 272,
+    releaseYear: 2019,
+    songUrl: "https://audio.storage.iran.liara.space/lana-del-ray/Lana-Del-Rey-Happiness-Is-A-Butterfly.mp3",
+    
+    3:
+    songTitle: "West coast",
+    artistName: "Lana del ray",
+    duration: 256 ,
+    releaseYear: 2014,
+    songUrl: "https://audio.storage.iran.liara.space/lana-del-ray/05_west_coast.mp3",
+    
+    4: 
+    
+    songTitle: "Say yes to heaven",
+    artistName: "Lana del ray",
+    duration: 209 ,
+    releaseYear: 2015,
+    songUrl: "https://audio.storage.iran.liara.space/lana-del-ray/lana_del_rey_-_say_yes_to_heaven.mp3",
+    
+    
+    5: 
+    
+    songTitle: "Born to die",
+    artistName: "Lana del ray",
+    duration: 286 ,
+    releaseYear: 2011,
+    songUrl: "https://audio.storage.iran.liara.space/lana-del-ray/02.born_to_die.mp3",
+    
+    
+    
+    
+    */
+
+
+    const postData = async () => {
+      const data = {
+        songTitle: "Summertime sadness",
+        artist: "Lana del ray",
+        duration: 265,
+        releaseYear: 2012,
+        songUrl:
+          "https://audio.storage.iran.liara.space/lana-del-ray/09.summertime_sadness.mp3",
+      };
+
+
+      const res = await fetch('http://localhost:4000/v1/song', {
+        method: 'POST',
+        body: JSON.stringify(data),
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      });
+
+      console.log(res)
+      const obj = await res.json();
+
+      console.log(obj);
+      console.log('hello');
+    };
+
+    postData();
+
+  </script>
+</body>
+
+</html> -->
