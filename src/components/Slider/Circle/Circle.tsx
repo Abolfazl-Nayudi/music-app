@@ -1,4 +1,3 @@
-import React from 'react';
 import './Circle.css';
 export default function Circle({ current }: { current: boolean }) {
   return (

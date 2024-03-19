@@ -8,3 +8,9 @@ export type SongFormType = {
   songUrl: string;
   image: Base64Data;
 };
+
+export type ReduxStateType = {
+  menuReducer: {
+    open: boolean;
+  };
+};

@@ -5,7 +5,36 @@ header {
   margin-top: 4rem;
 }
 
+header > div {
+  display: flex;
+  align-items: center;
+}
+
+.menu-icon {
+  display: none;
+  color: white;
+  cursor: pointer;
+}
+
+.menu-icon > * {
+  width: 3rem;
+  height: 3rem;
+}
+
 .auth-btn {
   display: flex;
   gap: 15px;
+}
+
+@media (max-width: 1440px) {
+  header {
+    width: 99%;
+  }
+}
+@media (max-width: 1280px) {
+  .menu-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }

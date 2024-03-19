@@ -41,14 +41,7 @@ function Slider() {
 
   return (
     <section className="slider">
-      <div
-        style={
-          {
-            // aspectRatio: '10 / 6',
-            // margin: '0 auto',
-          }
-        }
-      >
+      <div>
         <section
           aria-label="Image Slider"
           style={{ width: '100%', height: '100%', position: 'relative' }}

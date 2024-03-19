@@ -6,9 +6,7 @@ import SideBar from './components/SideBar/SideBar';
 function App() {
   return (
     <section className="website-parent">
-      <div className="sidebar">
-        <SideBar />
-      </div>
+      <SideBar />
       <div className="content">
         <Header />
         <Slider />

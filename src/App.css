@@ -26,12 +26,3 @@ body {
 .content {
   flex-grow: 1;
 }
-
-.sidebar {
-  width: 271px;
-  height: 100vh;
-  position: sticky;
-  top: 0;
-  color: white;
-  background-color: black;
-}
