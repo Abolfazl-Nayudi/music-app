@@ -1,5 +1,15 @@
 import React from 'react';
 import './Text.css';
-export default function Text({ word }: { word: string }) {
-  return <span className="text">{word}</span>;
+
+type TextProps = {
+  word: string;
+  color?: string;
+};
+
+export default function Text({ word, color }: TextProps) {
+  return (
+    <span style={{ color: `${color ? color : ''}` }} className="text">
+      {word}
+    </span>
+  );
 }
