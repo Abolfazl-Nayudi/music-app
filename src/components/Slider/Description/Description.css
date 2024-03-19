@@ -1,0 +1,68 @@
+.description {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  left: 40px;
+  transform: translateY(-50%);
+  color: white;
+}
+
+.description > h2 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.description > p {
+  word-spacing: 3px;
+  font-weight: 400;
+}
+
+.description > p > span:first-child {
+  margin-left: 5px;
+}
+.description > div {
+  display: flex;
+  gap: 10px;
+}
+
+.description > div > button {
+  font-size: 16px;
+}
+
+.listen-btn {
+  width: 131px;
+  height: 42.5px;
+  border-radius: 10px;
+  border: 2px solid #ee10b0;
+  background-color: rgba(255, 255, 255, 0);
+  color: #ee10b0;
+  box-shadow: 0 0 5px 1px #ee10b0;
+  transition: all 0.2s ease;
+}
+
+.listen-btn:hover {
+  border: 2 solid rgba(255, 255, 255, 0);
+  background-color: #ee10b0;
+  color: white;
+}
+
+.follow-btn {
+  width: 131px;
+  height: 42.5px;
+  border-radius: 10px;
+  border: 2px solid #00a8a8;
+  background-color: rgba(255, 255, 255, 0);
+  color: #33e9e9;
+  box-shadow: 0 0 5px 1px #00a8a8;
+  transition: all 0.2s ease;
+}
+
+.follow-btn:hover {
+  border: 2 solid rgba(255, 255, 255, 0);
+  background-color: #33e9e9;
+  color: white;
+}

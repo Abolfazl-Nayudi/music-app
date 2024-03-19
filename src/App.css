@@ -6,7 +6,9 @@
   --light: rgba(255, 56, 128, 0.3);
 }
 
-* {
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
