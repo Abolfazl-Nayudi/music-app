@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import './Header.css';
 import LoginBtn from '../Buttons/LoginBtn/LoginBtn';
-import SignUp from '../Buttons/SignUpBtn/SignUp';
+import SignUp from '../Buttons/SignUpBtn/SignUpBtn';
 import Nav from '../Nav/Nav';
 import SearchBar from '../SearchBar/SearchBar';
 import { Menu } from 'lucide-react';

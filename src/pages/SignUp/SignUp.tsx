@@ -2,11 +2,13 @@ import logo from '../../assets/logo/logo.png';
 import googleIcon from '../../assets/icons/google.png';
 import facebookIcon from '../../assets/icons/facebook.png';
 import './SignUp.css';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 export default function SignUp() {
+  const navigate = useNavigate();
+
   return (
     <section className="signup-page">
-      <div className="logo">
+      <div className="logo" onClick={() => navigate('/')}>
         <img src={logo} alt="" />
         <h1 className="signup-title">Melodies</h1>
       </div>

@@ -4,12 +4,14 @@ import googleIcon from '../../assets/icons/google.png';
 import facebookIcon from '../../assets/icons/facebook.png';
 import './Login.css';
 import { ChevronRight } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 export default function Login() {
+  const navigate = useNavigate();
+
   return (
     <section className="login-page">
-      <div className="logo">
+      <div className="logo" onClick={() => navigate('/')}>
         <img src={logo} alt="logo" />
         <h1 className="login-title">Melodies</h1>
       </div>
