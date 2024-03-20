@@ -4,6 +4,8 @@ import googleIcon from '../../assets/icons/google.png';
 import facebookIcon from '../../assets/icons/facebook.png';
 import './Login.css';
 import { ChevronRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
+
 export default function Login() {
   return (
     <section className="login-page">
@@ -12,7 +14,7 @@ export default function Login() {
         <h1 className="login-title">Melodies</h1>
       </div>
       <div className="login-form">
-        <h2>Login to Continue</h2>
+        <h2>Login To Continue</h2>
         <form action="">
           <input type="email" placeholder="E-Mail" />
           <input type="password" placeholder="Password" />
@@ -42,8 +44,10 @@ export default function Login() {
         </div>
       </div>
       <div className="have-not-account">
-        <span>Don't Have An Account</span>
-        <button>Sign up</button>
+        <span>Don't Have An Account ?</span>
+        <button>
+          <Link to="/register">Sign up</Link>
+        </button>
       </div>
     </section>
   );
