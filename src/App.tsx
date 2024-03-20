@@ -1,18 +1,26 @@
 import './App.css';
-import Slider from './components/Slider/Slider';
-import Header from './components/Header/Header';
-import SideBar from './components/SideBar/SideBar';
+import Home from './pages/Home/Home';
+import Login from './pages/Login/Login';
+import SignUp from './pages/SignUp/SignUp';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <Home />,
+  },
+  {
+    path: '/register',
+    element: <SignUp />,
+  },
+  {
+    path: '/login',
+    element: <Login />,
+  },
+]);
 
 function App() {
-  return (
-    <section className="website-parent">
-      <SideBar />
-      <div className="content">
-        <Header />
-        <Slider />
-      </div>
-    </section>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;
