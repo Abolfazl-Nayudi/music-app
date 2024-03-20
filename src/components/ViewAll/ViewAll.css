@@ -1,0 +1,20 @@
+.view-all {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.view-all-icon {
+  width: 62px;
+  height: 62px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #1e1e1e;
+}
+
+.view-all-icon > * {
+  width: 2rem;
+  height: 2rem;
+}

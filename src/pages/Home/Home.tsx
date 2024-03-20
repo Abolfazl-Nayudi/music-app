@@ -1,8 +1,8 @@
-import React from 'react';
+import './Home.css';
 import SideBar from '../../components/SideBar/SideBar';
 import Header from '../../components/Header/Header';
 import Slider from '../../components/Slider/Slider';
-import './Home.css';
+import SongSection from '../../components/SongSection/SongSection';
 export default function Home() {
   return (
     <section className="website-parent">
@@ -10,6 +10,7 @@ export default function Home() {
       <div className="content">
         <Header />
         <Slider />
+        <SongSection />
       </div>
     </section>
   );

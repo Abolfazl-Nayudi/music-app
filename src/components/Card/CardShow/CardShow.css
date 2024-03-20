@@ -1,0 +1,40 @@
+.song-card {
+  width: 180px;
+  height: 220px;
+  padding: 1rem;
+  background-color: #1f1f1f;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  cursor: pointer;
+}
+
+.song-card > img {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  align-self: center;
+  margin-bottom: 0.7rem;
+}
+
+.song-name {
+  font-size: 12px;
+}
+
+.song-name + div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-song-icon > * {
+  width: 1rem;
+  height: 1rem;
+  color: #ee10b0;
+}
+
+.artist-name {
+  font-size: 12px;
+  font-weight: 200;
+}

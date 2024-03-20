@@ -1,16 +1,15 @@
 import { createSlice } from '@reduxjs/toolkit';
 
-type StateType = { open: boolean };
 const initialState = { open: false };
 
 const menuSlice = createSlice({
   name: 'hamburgerMenu',
   initialState,
   reducers: {
-    open(state: StateType) {
+    open(state) {
       state.open = true;
     },
-    close(state: StateType) {
+    close(state) {
       state.open = false;
     },
   },
